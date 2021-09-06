@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="file:///D:/E-Commerce/Home%20page/home.html" style="text-decoration: none ;color: black;" id="titlebar"> </a></div>
+
+        <div class="main">
+
+            <ul>
+
+                <li>
+                    <a href="file:///D:/E-Commerce/Home%20page/home.html" style="color: #551A8B;" id="Home"></a>
+                </li>
+                <li>
+                    <a href="#" style="color: #551A8B;" id = "About"> <span class="arrow-up" style="padding-left:3px"></span></a>
+
+                    <ul class="sub">
+                        <li style="z-index: 2"><a href="file:///D:/E-Commerce/description/des.html" id = "Description"></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" style="color: #551A8B;" id = "ContactUs"><span<i class="arrow right">></i></span></a>
+                    <ul class="sub">
+
+                        <li style="z-index: 2"><a href="https://www.facebook.com/" target="_blank" id = "FaceBook"></a></li>
+                        <li style="z-index: 2"><a href="https://twitter.com/?lang=en" target="_blank" id = "Twitter"></a></li>
+                        <li style="z-index: 2"><a href="https://www.linkedin.com/" target="_blank" id="LinkedIn"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" style="color: #551A8B;" id="More">More <span class="arrow" style="padding-left:20px;">&#x25BC;</span></a>
+                    
+                    <ul class="sub" style="z-index: 2;">
+
+                        <li style="z-index: 2" id="admin"><a href="file:///D:/E-Commerce/Admin/Admin.html" id="Admin"></a></li>
+                        <li style="z-index: 2" id="register" ><a href="file:///D:/E-Commerce/register/register.html" id="Register"></a></li>
+                        <li style="z-index: 2" id="login"> <a href="file:///D:/E-Commerce/login/login.html" id="Login"></a></li>
+                        <li style="z-index: 2" id="logout"><a href="file:///D:/E-Commerce/Home%20page/home.html" onclick="del()" id="Logout" ></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- Register page start -->
+    <div class="container">
+        <div class="r1">Create Account</div>
+        <div class="r2">
+            <div class="first"><input type="text" placeholder="First Name" required id="1" value=""></div>
+            <div class="last"><input type="text" placeholder="Last Name" required id="2" value=""></div>
+        </div>
+        <div class="r3">
+            <div class="email"><input type="email" placeholder="E-mail"  id="3" value="" required></div>
+            <div class="pass"><input type="password" placeholder="Password" required id="4" value="" minlength="10"></div>
+        </div>
+        <div class="r4">
+            <div class="no."><input type="tel" placeholder="Phone Number"  id="5" value="" required></div>
+            <div class="username"><input type="user" placeholder="UserName" required id="6" value=""></div>
+        </div>
+        <div class="r5">
+            <div class="button">
+                <button type="submit" onclick="valid()"  value="Create an account" required>Create an account</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="register.js"></script>
+<script src="../local/local.js"></script>
+<script src="../local/edit.js"></script>
+</html>

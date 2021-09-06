@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+<link rel="stylesheet" href="Admin.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="file:///D:/E-Commerce/Home%20page/home.html" style="text-decoration: none ;color: black;" id="titlebar"> </a></div>
+
+        <div class="main">
+
+            <ul>
+
+                <li>
+                    <a href="file:///D:/E-Commerce/Home%20page/home.html" style="color: #551A8B;" id="Home"></a>
+                </li>
+                <li>
+                    <a href="#" style="color: #551A8B;" id = "About"> <span class="arrow-up" style="padding-left:3px"></span></a>
+
+                    <ul class="sub">
+                        <li style="z-index: 2"><a href="file:///D:/E-Commerce/description/des.html" id = "Description"></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" style="color: #551A8B;" id = "ContactUs"><span<i class="arrow right">></i></span></a>
+                    <ul class="sub">
+
+                        <li style="z-index: 2"><a href="https://www.facebook.com/" target="_blank" id = "FaceBook"></a></li>
+                        <li style="z-index: 2"><a href="https://twitter.com/?lang=en" target="_blank" id = "Twitter"></a></li>
+                        <li style="z-index: 2"><a href="https://www.linkedin.com/" target="_blank" id="LinkedIn"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" style="color: #551A8B;" id="More">More <span class="arrow" style="padding-left:20px;">&#x25BC;</span></a>
+                    
+                    <ul class="sub" style="z-index: 2;">
+
+                        <li style="z-index: 2" id="admin"><a href="file:///D:/E-Commerce/Admin/Admin.html" id="Admin"></a></li>
+                        <li style="z-index: 2" id="register" ><a href="file:///D:/E-Commerce/register/register.html" id="Register"></a></li>
+                        <li style="z-index: 2" id="login"> <a href="file:///D:/E-Commerce/login/login.html" id="Login"></a></li>
+                        <li style="z-index: 2" id="logout"><a href="file:///D:/E-Commerce/Home%20page/home.html" onclick="del()" id="Logout" ></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End NAV -->
+<div class="container" id="cont">
+   
+<fieldset class="first" id="first">
+    <legend>Account Settings</legend>
+   <div class="mainstyle" name="mainstyle" style="border:2px solid black;">
+
+        <div class="r1" style="height: auto;">
+            <div class="info" style="font-style:italic; letter-spacing:2px;">UserName :</div>
+            <div class="value" style=" border: 2px solid black;" id="name"></div>
+         </div>
+         <div class="r2">
+        <div class="info" style="font-style:italic; letter-spacing:2px ;">Change To:</div>
+        <input class="value" type="text" id="input1">
+         </div>
+    </div>
+
+
+    <div class="mainstyle" name="mainstyle" style="border:2px solid black;">
+
+        <div class="r1">
+            <div class="info" style="font-style:italic; letter-spacing:2px ;">Password :</div>
+            <div class="value"  style=" border: 2px solid black;" id="pass"></div>
+        </div>
+        <div class="r2">
+            <div class="info" style="font-style:italic; letter-spacing:2px ;">Change To:</div>
+            <input class="value" type="text" id="input2">
+        </div>
+   </div>
+   
+
+   <div class="mainstyle" name="mainstyle" style="border:2px solid black;">
+
+    <div class="r1">
+        <div class="info" style="font-style:italic; letter-spacing:2px  ;">Email :</div>
+        <div class="value" style=" border: 2px solid black;" id="email"></div>
+    </div>
+    <div class="r2">
+        <div class="info" style="font-style:italic; letter-spacing:2px ;">Change To:</div>
+        <input class="value" type="text"id="input3">
+    </div>
+</div>
+
+
+<div class="mainstyle"  style="border:2px solid black;">
+
+    <div class="r1">
+        <div class="info" style="font-style:italic; letter-spacing:2px ;">Phone No. :</div>
+        <div  class="value" style=" border: 2px solid black;"id="number"></div>
+    </div>
+    <div class="r2">
+        <div  class="info"style="font-style:italic; letter-spacing:2px ;">Change To:</div>
+        <input class="value" type="text" id="input4">
+    </div>  
+</div>
+
+    <div class="A">
+        <button class="button" onclick="changeAdmin()">Save Changes</button>
+    </div>
+
+
+</fieldset>
+<!-- /***************************************/ -->
+<fieldset class="second" id="second">
+    <legend>Display Settings</legend>
+    <div class="box">
+        <div class="b1">
+            <div class="f1" style="font-style:italic;">Background M.Color</div>
+           <div><input type="color" id="firstColor" class="f2"></div>
+            <button class="f3" onclick="changeColor1()">Save Changes</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="b1">
+            <div class="f1" style="font-style:italic;">Background R.Color</div>
+           <div><input type="color" id="secondColor" class="f2"></div>
+            <button class="f3" onclick="changeColor2()">Save Changes</button>
+        </div>
+    </div>
+
+
+
+    <div class="box">
+        <div class="b1">
+            <div class="f1" style="font-style:italic;">Background L.Color</div>
+           <div><input type="color" id="thirdColor" class="f2"></div>
+            <button class="f3" onclick="changeColor3()">Save Changes</button>
+        </div>
+    </div>
+
+
+
+    <div class="final">
+        <button class="f4" onclick="resetValues()">Reset</button>
+    </div>
+</fieldset>
+
+
+
+
+
+
+
+</div>
+
+    <script src="Admin.js"></script>
+    <script src="../local/local.js"></script>
+    <script src="../local/edit.js"></script>
+</body>
+</html>
